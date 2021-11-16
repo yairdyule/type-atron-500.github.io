@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap');
+
+body {
+  background-color: #1a1414;
+  color: #decccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Catamaran', sans-serif;
+}
+
+/* input area */
+form input {
+  background-color: transparent;
+  border: 0px solid transparent;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+
+/* borders */
+.success {
+  border: 2px solid green;
+}
+.failure {
+  border: 2px dotted red;
+}
+
+
+/* char spans */
+.wrong {
+  color: red;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.right {
+  color: green;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
