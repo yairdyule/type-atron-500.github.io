@@ -1,6 +1,6 @@
-Have you grown weary of the flashy, functional, no-fuss typing websites? 
+Have you grown weary of the flashy, functional, no-fuss typing websites?
 
-Want to get your hands dirty and use a less-functional one, *for no apparent reason*?
+Want to get your hands dirty and use a less-functional one, _for no apparent reason_?
 
 ## enter: **type-atron-5000**
 
@@ -12,4 +12,7 @@ It's the ~~seamless~~ seam-full typing experience that you've been waiting for.
 
 **usage**: `open index.html`
 
-#### contributions welcomed (esp. to README.md)
+note, you may have to click around to find the 'input' area. still
+heavily WIP!
+
+#### contributions welcomed (esp. to README.md, & for random text gen/quotes)
