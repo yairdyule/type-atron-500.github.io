@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap");
 
 body {
   background-color: #1a1414;
@@ -7,17 +7,26 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
 }
 
 /* input area */
 form input {
   background-color: transparent;
   border: 0px solid transparent;
-  padding: 2rem;
+  color: transparent;
+  cursor: none;
+  width: 100%; /* i want the user to be able to click anywhere on the screen to input - not currently working */
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-size: 2rem;
 }
 
+form input:focus {
+  outline: none;
+  border: none;
+}
 
 /* borders */
 .success {
@@ -27,7 +36,6 @@ form input {
   border: 2px dotted red;
 }
 
-
 /* char spans */
 .wrong {
   color: red;
@@ -36,6 +44,11 @@ form input {
 }
 .right {
   color: green;
-  font-size: 2.1rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.unmarked {
+  color: gray;
+  font-size: 2rem;
+  font-weight: 600;
 }
