@@ -1,13 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 
 body {
   background-color: #1a1414;
   color: #decccc;
   display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
+  padding: 8rem 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+
+#tack {
+  width: 60%;
 }
 
 /* input area */
@@ -28,6 +37,12 @@ form input:focus {
   border: none;
 }
 
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 /* borders */
 .success {
   border: 2px solid green;
@@ -38,17 +53,17 @@ form input:focus {
 
 /* char spans */
 .wrong {
-  color: red;
+  color: #ff8d8d;
   font-size: 2rem;
   font-weight: 600;
 }
 .right {
-  color: green;
+  color: #b5fbb5;
   font-size: 2rem;
   font-weight: 600;
 }
 .unmarked {
-  color: gray;
+  color: #6f6f6f;
   font-size: 2rem;
   font-weight: 600;
 }
