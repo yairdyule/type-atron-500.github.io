@@ -10,7 +10,9 @@ It's the ~~seamless~~ seam-full typing experience that you've been waiting for.
 
 - yes, it is a shameless attempt to capture that sweet, sweet monkeytype lightning in a malformed bottle—so what!!
 
-**usage**: `open index.html`
+**usage**: `npm install && nodemon server.js`
+
+then, goto `http://localhost:3000/intex.html`
 
 note, you may have to click around to find the 'input' area. still
 heavily WIP!
