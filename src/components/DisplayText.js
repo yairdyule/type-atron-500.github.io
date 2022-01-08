@@ -8,9 +8,9 @@ export default function DisplayText({ input, target, focused }) {
     >
       {input.split("").map((char, index) => {
         let className;
-        if (char == target[index]) {
+        if (char === target[index]) {
           className = "text-emerald-300";
-        } else if (char != target[index]) {
+        } else if (char !== target[index]) {
           className = "text-red-300";
         }
         return (
