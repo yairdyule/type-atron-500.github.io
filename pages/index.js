@@ -9,7 +9,7 @@ export default function Home() {
     "hello, world!",
   ];
 
-  const target = texts[Math.floor(Math.random() * texts.length)].text;
+  const target = texts[Math.floor(Math.random() * texts.length)];
 
   return (
     <div className="flex flex-col items-center justify-center">
