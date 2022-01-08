@@ -1,6 +1,6 @@
 import "../styles/Home.module.css";
 import TypingBox from "./Components/TypingBox";
-import { texts } from "../data";
+import { texts } from "../public/data";
 
 export default function Home() {
   const target = texts[Math.floor(Math.random() * texts.length)].text;

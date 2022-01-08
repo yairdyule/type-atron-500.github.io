@@ -2,7 +2,7 @@ export default function DisplayText({ input, target, focused }) {
   return (
     <p
       className={
-        "    font-bold tracking-widest ease-in-out duration-150" +
+        "font-bold tracking-widest ease-in-out duration-150" +
         (!focused && " blur-sm")
       }
     >
