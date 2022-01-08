@@ -1,7 +1,13 @@
-import Head from "next/head";
-import Image from "next/image";
 import "../styles/Home.module.css";
+import TypingBox from "./Components/TypingBox";
+import { texts } from "../data";
 
 export default function Home() {
-  return <h1 className="text-xl font-bold text-black">hello, world</h1>;
+  const target = texts[Math.floor(Math.random() * texts.length)].text;
+
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <TypingBox target={target} />
+    </div>
+  );
 }
