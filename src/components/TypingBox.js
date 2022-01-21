@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DisplayText from "./DisplayText";
 
-export default function TypingBox({ target }) {
+export default function TypingBox() {
   const [input, setInput] = useState("");
   const [isFocused, setFocused] = useState(false);
 
@@ -20,7 +20,7 @@ export default function TypingBox({ target }) {
         spellCheck="false"
         className="bg-transparent top-1/2 left-1/2 -translate-x-1/3 -translate-y-8  text-transparent absolute resize-none outline-none w-96 h-56"
       ></textarea>
-      <DisplayText input={input} target={target} focused={isFocused} />
+      <DisplayText input={input} focused={isFocused} />
     </div>
   );
 }
