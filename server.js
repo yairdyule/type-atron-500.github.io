@@ -3,11 +3,12 @@ const cors = require("cors");
 
 const app = express();
 
-const domainsFromEnv = process.env.CORS_DOMAINS || "http://localhost:3000";
-const whitelist = domainsFromEnv.split(",").map((item) => item.trim());
+const CORS_DOMAINS = ["https://typerino.vercel.app/", "http://localhost:3000"];
+// const domainsFromEnv = process.env.CORS_DOMAINS || "http://localhost:3000";
+// const whitelist = domainsFromEnv.split(",").map((item) => item.trim());
 const corsOptions = {
   origin: function (origin, callback) {
-    if (!origin || whitelist.indexOf(origin) !== -1) {
+    if (!origin || CORS_DOMAINS.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
       callback(new Error("Not allowed by CORS"));
