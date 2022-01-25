@@ -8,7 +8,7 @@ export default function Login({ setLoggedIn, loggedIn }) {
   const [showAlert, setShowAlert] = useState(false);
 
   const signIn = async () => {
-    let { data } = await axios.post("http://localhost:8000/login", {
+    let { data } = await axios.post("http://localhost:8000/user/login", {
       username,
       password,
     });
@@ -24,8 +24,8 @@ export default function Login({ setLoggedIn, loggedIn }) {
     }
   };
 
-  const logIn = async () => {
-    let { data } = await axios.post("http://localhost:8000/signup", {
+  const signUp = async () => {
+    let { data } = await axios.post("http://localhost:8000/user/signup", {
       username,
       password,
     });
@@ -62,7 +62,7 @@ export default function Login({ setLoggedIn, loggedIn }) {
       <button className="bg-green-700" onClick={signIn}>
         sign in
       </button>
-      <button className="bg-green-700" onClick={logIn}>
+      <button className="bg-green-700" onClick={signUp}>
         sign up
       </button>
     </div>

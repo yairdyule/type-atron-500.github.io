@@ -12,16 +12,20 @@ export default function AddText() {
   };
 
   return (
-    <div className="pt-40 flex flex-col justify-center items-center">
-      <input
+    <div className="flex flex-col gap-2 justify-center items-center">
+    <h1 className="text-xl text-slate-200">submit your text below</h1>
+      <textarea
         onChange={(e) => {
           setText(e.target.value);
         }}
         value={text}
-        className="text-slate-700 w-48 h-12"
+        className="text-slate-400 bg-slate-900 rounded-md w-96 h-24"
       />
-      <button className="bg-green-300" onClick={submitText}>
-        submit new text
+      <button
+        className="bg-green-400 rounded-md w-16 hover:bg-green-500"
+        onClick={submitText}
+      >
+        submit
       </button>
     </div>
   );

@@ -18,7 +18,7 @@ export default function DisplayText({ input, focused }) {
       <p
         className={
           "font-bold tracking-widest ease-in-out duration-150" +
-          (!focused && " blur-sm")
+          (!focused && " blur-md")
         }
       >
         {input.split("").map((char, index) => {

@@ -6,10 +6,10 @@ export default function TypingBox() {
   const [isFocused, setFocused] = useState(false);
 
   return (
-    <div className="m-12 relative ">
+    <div className="m-12 relative">
       {!isFocused && (
-        <p className=" text-slate-200">
-          click hereabouts whenever you&apos;re ready
+        <p className="absolute pl-24 font-medium text-xl text-slate-200 ease-in-out duration-300">
+          click hereabouts to type
         </p>
       )}
       <textarea
@@ -18,7 +18,7 @@ export default function TypingBox() {
         onBlur={() => setFocused(false)}
         value={input}
         spellCheck="false"
-        className="bg-transparent border-2 border-white top-1/2 left-1/2 -translate-x-1/3 -translate-y-8  text-transparent absolute resize-none outline-none w-96 h-56"
+        className="bg-transparent top-1/2 left-1/2 -translate-x-1/3 -translate-y-8  text-transparent absolute resize-none outline-none w-96 h-56"
       ></textarea>
       <DisplayText input={input} focused={isFocused} />
     </div>
